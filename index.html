@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biolink - Des Eddie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #cbdad1; /* Warna hijau pastel sesuai gambar */
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            background-color: #cbdad1;
+            padding-bottom: 50px;
+        }
+
+        /* Bagian Header / Background atas */
+        .header-bg {
+            width: 100%;
+            height: 200px;
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjChIQygCOOIhMvmVIWWJ0Y_d_N9pcbKxOhTnN9vNGZqb5_GfOE7F7EvLeFPIwOdpilZbWEOny2YOcVOYstFZ-OtmBoW1yiB6VoeQ2vZ_evMm7zuBQy7Tyc45s29YtNy_TCHvFJD5eiFrKX9QXw96q2iAvkU83sMRByi2V7AgLrFujHSQihxTAl3UPV/s1600/9.png?auto=format&fit=crop&w=800&q=80'); /* Ganti dengan link gambar meja/kantor kamu */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-bottom: 70px;
+        }
+
+        /* Foto Profil Boxy dengan Border */
+        .profile-wrapper {
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #cbdad1; /* Border menyatu dengan background */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Judul dan Subjudul */
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #2d4d3a; /* Hijau tua gelap */
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #4a6354;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        /* Styling Tombol */
+        .link-container {
+            padding: 0 40px;
+        }
+
+        .btn {
+            display: block;
+            background-color: #222222; /* Warna hitam elegan sesuai gambar */
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #333333;
+            transform: scale(1.02);
+        }
+
+        /* Footer / Instagram Handle */
+        .footer-handle {
+            margin-top: 30px;
+            color: #1b3a2a;
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+        }
+		
+		/* Animasi halus saat halaman dibuka */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.link-container a {
+    animation: fadeInUp 0.5s ease backwards;
+}
+
+/* Jeda animasi antar tombol agar muncul bergantian */
+.link-container a:nth-child(1) { animation-delay: 0.1s; }
+.link-container a:nth-child(2) { animation-delay: 0.2s; }
+.link-container a:nth-child(3) { animation-delay: 0.3s; }
+.link-container a:nth-child(4) { animation-delay: 0.4s; }
+.link-container a:nth-child(5) { animation-delay: 0.5s; }
+
+/* Efek Hover (Saat kursor di atas tombol) */
+.btn:hover {
+    background-color: #333333;
+    transform: scale(1.05); /* Membesar sedikit */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+		
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-bg">
+            <div class="profile-wrapper">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnUjIwtEiZSsvN_QmzmPWu8GrvnN2lY3UtwtymHcLQM9MdHzTV9SqW_r5wehY7ZV37F3ClqkfrhgoHPoomBISmcB2vxTX3WMVGLCUiXGzNdoyjrQjHycs_6QmCUSMqjQM55u4cKdQHXPSHSBhoK3Uj_3GYB4u0P11B2Rq-TjZGZlqNEJY7FEa9jz9s/s150/PP-01.webp" alt="Des Eddie" class="profile-pic">
+            </div>
+        </div>
+
+        <h1>Des Eddie</h1>
+        <p class="subtitle">Architecture's Blogger</p>
+
+        <div class="link-container">
+            <a href="https://www.desain-ar.my.id" target="_blank" class="btn">My Portfolio</a>
+            <a href="https://www.desain-ar.my.id/form-submit-data-desain" target="_blank" class="btn">Request Design</a>
+            <a href="https://informa.clicx.my.id" target="_blank" class="btn">Interior Catalog</a>
+            <a href="https://furnistore.depok.xyz" target="_blank" class="btn">FurniStore</a>
+            <a href="https://www.buku-on.my.id" target="_blank" class="btn">My Book Shop</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
